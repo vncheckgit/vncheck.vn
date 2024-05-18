@@ -51,14 +51,32 @@
         }
 
         @media (orientation: landscape) {
-            .header-image {
+
+            .header-image,
+            .container {
                 width: 33vw;
             }
 
-            .container {
-                padding-right: 0;
-                padding-left: 0;
-                width: 33vw;
+            @media (max-width: 1912px) {
+
+                .header-image,
+                .container {
+                    width: 33vw;
+                }
+            }
+
+            @media (max-width: 1528px) {
+
+                .header-image,
+                .container {
+                    width: 25vw;
+                }
+
+                .section h2 {
+                    text-align: center;
+                    font-size: 1.17em;
+                    margin: 1em 0;
+                }
             }
         }
 
