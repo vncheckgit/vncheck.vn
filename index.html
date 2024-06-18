@@ -14,7 +14,7 @@
             margin: 0;
             padding: 0;
             height: 120%;
-            background-image: linear-gradient(to bottom, #daf0ff 0%, #6ac5fe 74%);
+            background: linear-gradient(to bottom, #DFFFD7, #90EE90);
             background-repeat: no-repeat;
         }
 
@@ -139,12 +139,8 @@
                 <input type="text" class="form-control" id="phone" name="phone" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="affiliate" class="form-label">Mã giới thiệu:</label>
-                <input type="affiliate" class="form-control" id="affiliate" name="affiliate" placeholder="Không bắt buộc">
+                <label for="corporation" class="form-label">Tên đơn vị:</label>
+                <input type="corporation " class="form-control" id="corporation " name="corporation" required>
             </div>
             <br>
             <div class="d-flex justify-content-center">
@@ -159,7 +155,7 @@
             document.getElementById("multi-section-form").addEventListener("submit", function (event) {
                 event.preventDefault();
                 var formData = new FormData(event.target);
-                fetch('https://script.google.com/macros/s/AKfycbwjQRYEvJoYpfXC3ryj7-q-2PD-Yc1ulrjceyMflVehqZ7cwwtM70aZUuECX3CHfoPL/exec', {
+                fetch('https://script.google.com/macros/s/AKfycbw5FOMFjj_kBieEuCDcTILTiu3SUoygOu05FSnwRyjBgt3V2nmxDxBsH90j108UK0rD1g/exec', {
                     method: 'POST',
                     body: formData
                 })
